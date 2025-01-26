@@ -1,6 +1,8 @@
-# AI Chat App
+# AI Chat
 
 A modern React-based chat application that integrates with an AI API for intelligent conversations.
+
+![AI Chat Screenshot](./screenshot.png)
 
 ## Features
 
@@ -24,7 +26,7 @@ Before installing the application, make sure you have the following installed on
 
 1. **Clone the Repository**
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/slightnich/chatAI-ReactJS.git
    cd ai-chat-app
    ```
 
@@ -47,6 +49,29 @@ Before installing the application, make sure you have the following installed on
    npm start
    ```
    The application will be available at `http://localhost:3000`
+
+## API Configuration
+
+This application uses the Nexon AI API for chat functionality. Follow these steps to configure the API:
+
+1. **Get API Access**
+   - Visit https://api.nexon.my.id to get your API credentials
+   - Sign up for an account if you haven't already
+
+2. **Configure API in Environment**
+   - Open your `.env` file
+   - Add your API configuration:
+     ```env
+     REACT_APP_API_URL=https://api.nexon.my.id
+     REACT_APP_API_KEY=your_api_key_here
+     ```
+
+3. **API Endpoints**
+   The application uses the following endpoints:
+   - Chat completion: `https://api.nexon.my.id/api/chat-gpt`
+
+4. **Rate Limits**
+   Please refer to the API documentation at https://api.nexon.my.id for current rate limits and usage guidelines.
 
 5. **Build for Production** (Optional)
    ```bash
@@ -116,7 +141,7 @@ const Chat = () => {
       const response = await axios.get(`https://api.nexon.my.id/api/chat-gpt`, {
         params: {
           q: input,
-          apikey: 'NexonApi22'
+          apikey: 'your_api_key'
         }
       });
 
@@ -197,6 +222,15 @@ npm cache clean --force
 ```bash
 node -v  # Should be v16 or higher
 ```
+
+## Connect With Me
+
+Feel free to connect with me on various social media platforms:
+
+- 🌐 Website: [nexon.my.id](https://nexon.my.id)
+- 📱 Instagram: [@nexon.my.id](https://instagram.com/itsmyransyah)
+- 🐙 GitHub: [@slightnich](https://github.com/slightnich)
+- 📧 Email: [admin@nexon.my.id](mailto:admin@nexon.my.id)
 
 ## License and Copyright
 
