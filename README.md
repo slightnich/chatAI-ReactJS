@@ -26,11 +26,7 @@ Before installing the application, make sure you have the following installed on
 
 1. **Clone the Repository**
    ```bash
-<<<<<<< HEAD
-   git clone https://github.com/slightnich/chatAI-ReactJS.git
-=======
    git clone https://github.com/slightnich/chatAI-ReactJs
->>>>>>> e6d7e7e770f11428c9847ab9c60d71f9998a2190
    cd ai-chat-app
    ```
 
