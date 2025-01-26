@@ -116,7 +116,7 @@ const Chat = () => {
       const response = await axios.get(`https://api.nexon.my.id/api/chat-gpt`, {
         params: {
           q: input,
-          apikey: 'NexonApi22'
+          apikey: 'your_api_key'
         }
       });
 
